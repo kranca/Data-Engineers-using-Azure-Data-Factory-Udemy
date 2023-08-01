@@ -1,0 +1,28 @@
+{
+	"name": "ls_hdi_covid_cluster",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HDInsightOnDemand",
+		"typeProperties": {
+			"clusterType": "hadoop",
+			"clusterSize": 2,
+			"timeToLive": "00:15:00",
+			"version": "4.0",
+			"hostSubscriptionId": "205c17bb-831d-4f69-bd0b-404f1395f67e",
+			"clusterResourceGroup": "covid-reporting-rg",
+			"servicePrincipalId": "fccaf069-6f2c-4447-acba-bed8fccc3f80",
+			"tenant": "9652d7c2-1ccf-4940-8151-4a92bd474ed0",
+			"clusterNamePrefix": "",
+			"additionalLinkedServiceNames": [],
+			"linkedServiceName": {
+				"referenceName": "ls_ablob_covidreportingsa",
+				"type": "LinkedServiceReference"
+			},
+			"headNodeSize": "",
+			"dataNodeSize": "",
+			"zookeeperNodeSize": "",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQ5MTBBOTY0LTVEMTktNEUzOC05N0M2LTUxM0IwQzU3RUU0N19jMDA4YTU4ZC00YzhiLTQwODQtODZjNi0wNzEwMmY3NzE5OTMiDQp9"
+		}
+	}
+}
